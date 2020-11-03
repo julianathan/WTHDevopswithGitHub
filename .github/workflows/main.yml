@@ -1,5 +1,9 @@
 name: .NET Core
-
+env:
+  registryName: wthghdevopsreg.azurecr.io
+  repositoryName: wth/dotnetcoreapp
+  dockerfilePath: ./Application/aspnet-core-dotnet-core
+  tag: $
 on:
   push:
     branches: [ main ]
